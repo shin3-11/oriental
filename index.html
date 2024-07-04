@@ -1,0 +1,923 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- slickのCSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
+    <!-- アニメーション -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'ura6dvf',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+    <link rel="stylesheet" type="text/css" href="css/add.css" />
+
+</head>
+
+<body>
+
+    <!-- ヘッダー -->
+    <section class="py-3">
+        <div class="row mw">
+            <div class="col-lg-2 center">
+                <img src="/img/logo.png">
+            </div>
+            <div class="col-lg-4">
+            </div>
+            <div class="col-lg-2 center">
+                <img src="/img/line1.png">
+            </div>
+            <div class="col-lg-4 center">
+                <img src="/img/tel1.png">
+            </div>
+        </div>
+    </section>
+
+    <!-- MV -->
+    <section class="bg-img">
+        <div class="row mw">
+            <div class="col-lg-6">
+                <img src="/img/mv_text.png" class="w-100">
+            </div>
+            <div class="col-lg-5 mx-auto">
+                <div class="row border border-dark d-shadow">
+                    <div class="col-12 bg-sub text-center border-bottom border-dark py-3">
+                        <h3 class="text-black m-0" style="-webkit-text-stroke: 1px rgb(255, 255, 255);">簡単スピード査定
+                        </h3>
+                    </div>
+                    <div class="col-12 bg-white text-center">
+                        <div class="row pt-4">
+                            <div class="col-5 list-form  mb-3">
+                                <p class="m-0">お名前</p>
+                                <p class="m-0 line1">必須</p>
+                            </div>
+                            <div class="col-6 bg-gray border border-dark py-4 ms-3 mb-3"></div>
+                            <div class="col-5 list-form  mb-3">
+                                <p class="m-0">電話番号</p>
+                                <p class="m-0 line1">必須</p>
+                            </div>
+                            <div class="col-6 bg-gray border border-dark py-4 ms-3 mb-3"></div>
+                            <div class="col-5 list-form  mb-3">
+                                <p class="m-0">車種</p>
+                                <p class="m-0 line1">必須</p>
+                            </div>
+                            <div class="col-6 bg-gray border border-dark py-4 ms-3 mb-3"></div>
+                        </div>
+                        <div class="row text-center">
+                            <div class="mx-auto"><button class="btn my-3">
+                                    <h3>いますぐ査定する！</h3>
+                                </button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- バナー -->
+    <section class="bg-main p-1">
+        <div class="row mw">
+            <div class="col-lg-2 center">
+                <img src="/img/soudan.png">
+            </div>
+            <div class="col-lg-5 center">
+                <img src="/img/tel2.png">
+            </div>
+            <div class="col-lg-3 center">
+                <img src="/img/line2.png">
+            </div>
+            <div class="col-lg-2">
+                <img src="/img/women.png">
+            </div>
+        </div>
+    </section>
+
+    <!-- 実績 -->
+    <section>
+        <div class="row mw">
+            <div class="col-lg-12 text-center mb-5">
+                <h1 class="line2 text-red px-5">高価買取実績多数！</h1>
+            </div>
+
+            <ul class="slider-1" id="js-slider-1">
+                <li>
+                    <div class="p-3">
+                        <div class="row p-3 border border-dark position-relative">
+                            <div class="col-12 text-center position-absolute" style="top:-20px;left: 0;">
+                                <h3 class="line1 px-5">クオン</h3>
+                            </div>
+                            <div class="col-12 my-4 p-0">
+                                <img src="/img/tr1.png" class="aspect1">
+                            </div>
+                            <div class="col-4 bg-gray mb-3 center">
+                                <p>年式</p>
+                            </div>
+                            <div class="col-8 mb-3">
+                                <p>平成17年</p>
+                            </div>
+                            <div class="col-4 bg-gray mb-3 center">
+                                <p>メーカー</p>
+                            </div>
+                            <div class="col-8 mb-3">
+                                <p>UDトラックス</p>
+                            </div>
+                            <div class="col-4 bg-gray mb-3 center">
+                                <p>走行距離</p>
+                            </div>
+                            <div class="col-8 mb-3">
+                                <p>187万Km</p>
+                            </div>
+                            <div class="col-4 bg-main mb-3 center">
+                                <p class="text-white">買取価格</p>
+                            </div>
+                            <div class="col-8 mb-3 center">
+                                <h3 class="text-yellow">60</h3>
+                                <p>万円</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="p-3">
+                        <div class="row p-3 border border-dark position-relative">
+                            <div class="col-12 text-center position-absolute" style="top:-20px;left: 0;">
+                                <h3 class="line1 px-5">トヨエース</h3>
+                            </div>
+                            <div class="col-12 my-4 p-0">
+                                <img src="/img/tr4.png" class="aspect1">
+                            </div>
+                            <div class="col-4 bg-gray mb-3 center">
+                                <p>年式</p>
+                            </div>
+                            <div class="col-8 mb-3">
+                                <p>平成20年</p>
+                            </div>
+                            <div class="col-4 bg-gray mb-3 center">
+                                <p>メーカー</p>
+                            </div>
+                            <div class="col-8 mb-3">
+                                <p>TOYOTA</p>
+                            </div>
+                            <div class="col-4 bg-gray mb-3 center">
+                                <p>走行距離</p>
+                            </div>
+                            <div class="col-8 mb-3">
+                                <p>100万Km</p>
+                            </div>
+                            <div class="col-4 bg-main mb-3 center">
+                                <p class="text-white">買取価格</p>
+                            </div>
+                            <div class="col-8 mb-3 center">
+                                <h3 class="text-yellow">50</h3>
+                                <p>万円</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="p-3">
+                        <div class="row p-3 border border-dark position-relative">
+                            <div class="col-12 text-center position-absolute" style="top:-20px;left: 0;">
+                                <h3 class="line1 px-5">ビッグサム</h3>
+                            </div>
+                            <div class="col-12 my-4 p-0">
+                                <img src="/img/tr3.png" class="aspect1">
+                            </div>
+                            <div class="col-4 bg-gray mb-3 center">
+                                <p>年式</p>
+                            </div>
+                            <div class="col-8 mb-3">
+                                <p>平成17年</p>
+                            </div>
+                            <div class="col-4 bg-gray mb-3 center">
+                                <p>メーカー</p>
+                            </div>
+                            <div class="col-8 mb-3">
+                                <p>日産ディーゼル</p>
+                            </div>
+                            <div class="col-4 bg-gray mb-3 center">
+                                <p>走行距離</p>
+                            </div>
+                            <div class="col-8 mb-3">
+                                <p>73万Km</p>
+                            </div>
+                            <div class="col-4 bg-main mb-3 center">
+                                <p class="text-white">買取価格</p>
+                            </div>
+                            <div class="col-8 mb-3 center">
+                                <h3 class="text-yellow">100</h3>
+                                <p>万円</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="p-3">
+                        <div class="row p-3 border border-dark position-relative">
+                            <div class="col-12 text-center position-absolute" style="top:-20px;left: 0;">
+                                <h3 class="line1 px-5">エルフ</h3>
+                            </div>
+                            <div class="col-12 my-4 p-0">
+                                <img src="/img/tr2.png" class="aspect1">
+                            </div>
+                            <div class="col-4 bg-gray mb-3 center">
+                                <p>年式</p>
+                            </div>
+                            <div class="col-8 mb-3">
+                                <p>平成20年</p>
+                            </div>
+                            <div class="col-4 bg-gray mb-3 center">
+                                <p>メーカー</p>
+                            </div>
+                            <div class="col-8 mb-3">
+                                <p>いすゞ</p>
+                            </div>
+                            <div class="col-4 bg-gray mb-3 center">
+                                <p>走行距離</p>
+                            </div>
+                            <div class="col-8 mb-3">
+                                <p>35万Km</p>
+                            </div>
+                            <div class="col-4 bg-main mb-3 center">
+                                <p class="text-white">買取価格</p>
+                            </div>
+                            <div class="col-8 mb-3 center">
+                                <h3 class="text-yellow">108</h3>
+                                <p>万円</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="p-3">
+                        <div class="row p-3 border border-dark position-relative">
+                            <div class="col-12 text-center position-absolute" style="top:-20px;left: 0;">
+                                <h3 class="line1 px-5">エルフ</h3>
+                            </div>
+                            <div class="col-12 my-4 p-0">
+                                <img src="/img/tr5.png" class="aspect1">
+                            </div>
+                            <div class="col-4 bg-gray mb-3 center">
+                                <p>年式</p>
+                            </div>
+                            <div class="col-8 mb-3">
+                                <p>平成30年</p>
+                            </div>
+                            <div class="col-4 bg-gray mb-3 center">
+                                <p>メーカー</p>
+                            </div>
+                            <div class="col-8 mb-3">
+                                <p>いすゞ</p>
+                            </div>
+                            <div class="col-4 bg-gray mb-3 center">
+                                <p>走行距離</p>
+                            </div>
+                            <div class="col-8 mb-3">
+                                <p>100万Km</p>
+                            </div>
+                            <div class="col-4 bg-main mb-3 center">
+                                <p class="text-white">買取価格</p>
+                            </div>
+                            <div class="col-8 mb-3 center">
+                                <h3 class="text-yellow">65</h3>
+                                <p>万円</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </section>
+
+    <!-- ワンストップ -->
+    <section>
+        <div class="row mw">
+            <div class="col-lg-6 pe-lg-5">
+                <h2 class="mb-3 line1 px-5">ワンストップサービス</h2>
+                <h2>買取から販売まで<br>
+                    <span class="text-danger">全て弊社で</span>行っています
+                </h2>
+                <p>ご相談をいただいてから販売に至るまで、全ての工程を弊社にてワンストップで行っています。<br>
+                    買取った車の修理や整備を行い、高く販売するために海外へ輸出します。<br>
+                    間に第三者を挟むことがないため、「働く車買取屋」では余計な時間や費用が一切かかっておりません。</p>
+            </div>
+            <div class="col-lg-6">
+                <img src="/img/cars.png">
+            </div>
+        </div>
+
+        <div class="mw p-5">
+            <div class="row bg-gray p-3">
+                <div class="col-lg-6 center p-3">
+                    <img src="/img/point1.png" class="w-25">
+                    <p class="m-0 p-3">
+                        私たちはお客様の愛車を最大限の価格で買取ります。<br>
+                        市場の最新情報を常に把握し、車種や状態に応じた適正な価格を提供します。</p>
+                </div>
+                <div class="col-lg-6 center p-3">
+                    <img src="/img/point2.png" class="w-25">
+                    <p class="m-0 p-3">
+                        グローバルなネットワークを活かし、買取した車を迅速かつ安全に海外へ輸出します。<br>
+                        専門の輸送チームが輸出手続きを一貫してサポートし、車両の状態を保ったまま目的地まで届けます。</p>
+                </div>
+                <div class="col-lg-6 center p-3">
+                    <img src="/img/point3.png" class="w-25">
+                    <p class="m-0 p-3">
+                        バニングとは車両に荷物を効率的かつ安全に積み込むプロフェッショナルな技術です。<br>
+                        輸送中の安全性を確保するため、熟練したスタッフが最適な配置と固定を行います。</p>
+                </div>
+                <div class="col-lg-6 center p-3">
+                    <img src="/img/point4.png" class="w-25">
+                    <p class="m-0 p-3">
+                        当社の強みの一つは、海外の現地スタッフによる販売サポートです。<br>
+                        現地の市場に精通したスタッフが、車両の販売を的確に行い、お客様のニーズに応じたサービスを提供します。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- お客様に選ばれる理由 -->
+    <section class="bg-1">
+        <div class="row mw">
+            <div class="col-lg-12 text-center mb-5">
+                <h1 class="line2 text-red px-5 mb-5">お客様に選ばれる理由</h1>
+            </div>
+            <div class="col-lg-4 position-relative bg-white p-4 pt-5 mx-auto my-5 d-shadow">
+                <img src="/img/r1.png" class="position-absolute text-r">
+                <p class="m-0 mt-3">必要書類があり、車両引き取りができれば、即日入金も可能となります！
+                    スケジュール調整いたしますので、ご希望の方は一度担当者までご確認をお願いします。</p>
+            </div>
+            <div class="col-lg-4 position-relative bg-white p-4 pt-5 mx-auto my-5 d-shadow">
+                <img src="/img/r2.png" class="position-absolute text-r">
+                <p class="m-0 mt-3">他社は国内販売が多いですが、弊社は海外への輸出も可能です!
+                    中古トラックは海外で非常に人気なので、買取も高額にすることができます！</p>
+            </div>
+
+            <div class="col-lg-12 text-center my-5">
+                <h1 class="line2 text-red px-5">高価買取の秘訣</h1>
+            </div>
+            <div class="col-lg-3 col-lg-reason bg-white p-4 pt-5 mx-auto border border-dark d-shadow">
+                <img src="/img/r3.png" class="">
+                <p class="m-0 mt-3">実は、海外では中古車でも日本の2倍以上で売買される車両もあり、
+                    弊社は 国内で販売する他社と異なり、海外輸出可能・販路も確立している為、高価買取が可能!
+                    （しかも、輸出は非常に難易度が高く、他社には中々真似できない！）</p>
+            </div>
+            <div class="col-lg-3 col-lg-reason bg-white p-4 pt-5 mx-auto border border-dark d-shadow">
+                <img src="/img/r4.png" class="">
+                <p class="m-0 mt-3">トラックの販売を社外に依頼して仲介手数料がかかっている他社と異なり、
+                    弊社は販売・輸出を直接交渉しており、余計な費用がかからない為、高価買取が可能!</p>
+            </div>
+            <div class="col-lg-3 col-lg-reason bg-white p-4 pt-5 mx-auto border border-dark d-shadow">
+                <img src="/img/r5.png" class="">
+                <p class="m-0 mt-3">全国規模の大手中古車販売・買取事業を行う企業でおよそ20年の勤務経験があり、整備士資格に加え、査定実績豊富なスタッフが揃っており、より高く買い取ることが可能!
+                    また、故障していても、車両整備にも長けている為、買取価格に還元可能！</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- トラック買取形状一覧 -->
+    <section>
+        <div class="row mw">
+            <div class="col-lg-12 text-center">
+                <h1 class="line2 text-black px-5">トラック買取形状一覧</h1>
+            </div>
+            <div class="col-lg-12 mt-5">
+                <h3 class="line1 px-5 mt-5">平ボディ・ダブルキャブ（Wキャブ）</h3>
+            </div>
+            <div class="col-6 col-lg-3 my-2">
+                <div class="bg-gray m-3 center p-4 h-100 border border-dark d-shadow">
+                    <h3 class="fw-bold">平ボディ</h3>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3 my-2">
+                <div class="bg-gray m-3 center p-4 h-100 border border-dark d-shadow">
+                    <h3 class="fw-bold">ダブルキャブ<br>
+                        （Wキャブ）</h3>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3 my-2">
+                <div class="bg-gray m-3 center p-4 h-100 border border-dark d-shadow">
+                    <h3 class="fw-bold">幌車</h3>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3 my-2">
+                <div class="bg-gray m-3 center p-4 h-100 border border-dark d-shadow">
+                    <h3 class="fw-bold">アルミブロック</h3>
+                </div>
+            </div>
+            <div class="col-lg-12 mt-5">
+                <h3 class="line1 px-5 mt-5">ダンプ</h3>
+            </div>
+            <div class="col-6 col-lg-3 my-2">
+                <div class="bg-gray m-3 center p-4 h-100 border border-dark d-shadow">
+                    <h3 class="fw-bold">ダンプ</h3>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3 my-2">
+                <div class="bg-gray m-3 center p-4 h-100 border border-dark d-shadow">
+                    <h3 class="fw-bold">深ダンプ<br>
+                        (土砂禁ダンプ)</h3>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3 my-2">
+                <div class="bg-gray m-3 center p-4 h-100 border border-dark d-shadow">
+                    <h3 class="fw-bold">ローダーダンプ</h3>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3 my-2">
+                <div class="bg-gray m-3 center p-4 h-100 border border-dark d-shadow">
+                    <h3 class="fw-bold">チップダンプ</h3>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3 my-2">
+                <div class="bg-gray m-3 center p-4 h-100 border border-dark d-shadow">
+                    <h3 class="fw-bold">スライドダンプ</h3>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3 my-2">
+                <div class="bg-gray m-3 center p-4 h-100 border border-dark d-shadow">
+                    <h3 class="fw-bold">ロングダンプ</h3>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3 my-2">
+                <div class="bg-gray m-3 center p-4 h-100 border border-dark d-shadow">
+                    <h3 class="fw-bold">リアダンプ</h3>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3 my-2">
+                <div class="bg-gray m-3 center p-4 h-100 border border-dark d-shadow">
+                    <h3 class="fw-bold">三転ダンプ</h3>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3 my-2">
+                <div class="bg-gray m-3 center p-4 h-100 border border-dark d-shadow">
+                    <h3 class="fw-bold">Ｆゲートダンプ</h3>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3 my-2">
+                <div class="bg-gray m-3 center p-4 h-100 border border-dark d-shadow">
+                    <h3 class="fw-bold">Lゲートダンプ</h3>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3 my-2">
+                <div class="bg-gray m-3 center p-4 h-100 border border-dark d-shadow">
+                    <h3 class="fw-bold">ダンプ<br>
+                        ・クレーン付</h3>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3 my-2">
+                <div class="bg-gray m-3 center p-4 h-100 border border-dark d-shadow">
+                    <h3 class="fw-bold">ファームダンプ</h3>
+                </div>
+            </div>
+            <div class="col-lg-12 mt-5">
+                <h3 class="line1 px-5 mt-5">クレーン</h3>
+            </div>
+            <div class="col-6 col-lg-3 my-2">
+                <div class="bg-gray m-3 center p-4 h-100 border border-dark d-shadow">
+                    <h3 class="fw-bold">ホイール<br>
+                        クレーン</h3>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3 my-2">
+                <div class="bg-gray m-3 center p-4 h-100 border border-dark d-shadow">
+                    <h3 class="fw-bold">オールテレーン<br>
+                        クレーン</h3>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3 my-2">
+                <div class="bg-gray m-3 center p-4 h-100 border border-dark d-shadow">
+                    <h3 class="fw-bold">ラフテレーン<br>
+                        クレーン</h3>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3 my-2">
+                <div class="bg-gray m-3 center p-4 h-100 border border-dark d-shadow">
+                    <h3 class="fw-bold">クレーン車</h3>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3 my-2">
+                <div class="bg-gray m-3 center p-4 h-100 border border-dark d-shadow">
+                    <h3 class="fw-bold">フルクレーン</h3>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3 my-2">
+                <div class="bg-gray m-3 center p-4 h-100 border border-dark d-shadow">
+                    <h3 class="fw-bold">ユニック</h3>
+                </div>
+            </div>
+
+            <div class="col-lg-12 text-center mt-5 pt-5">
+                <h1>その他重機・ミキサー・レッカーなど<br>
+                    <span class="text-danger">形状にかかわらず</span>買取させて頂いております。
+                </h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- トラック買取メーカー一覧 -->
+    <section class="bg-2">
+        <div class="row mw">
+            <div class="col-lg-12 text-center mb-5">
+                <h1 class="text-black line2 px-5">トラック買取メーカー一覧</h1>
+            </div>
+            <div class="col-lg-12">
+                <img src="/img/maker.png">
+            </div>
+        </div>
+    </section>
+
+    <!-- 船の買取 -->
+    <section class="bg-main p-1">
+        <div class="row mw">
+            <div class="col-lg-6 center py-5 mx-auto">
+                <img src="/img/text-ship.png">
+            </div>
+        </div>
+    </section>
+    <section class="bg-img2 p-1">
+        <div class="row mw py-5">
+            <div class="col-lg-6 mx-auto my-5 p-5 bg-white border border-danger border-5">
+                <div class="text-center">
+                    <h1 class="mb-5 text-black line2 px-5">船の買取・販売</h1>
+                </div>
+                <p>
+                    私たちは車だけでなく、船の買取販売も行っています。専門知識を持ったスタッフが、船の状態や市場価値を的確に評価し、最適な価格で買取ります。<br>
+                    また、国内外の広範なネットワークを活かし、買取った船を迅速に販売します。船舶の買取から販売まで、一貫したサービスを提供し、お客様に満足いただける取引を実現します。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- バナー -->
+    <section class="bg-main p-1">
+        <div class="row mw">
+            <div class="col-lg-2 center">
+                <img src="/img/soudan.png">
+            </div>
+            <div class="col-lg-5 center">
+                <img src="/img/tel2.png">
+            </div>
+            <div class="col-lg-3 center">
+                <img src="/img/line2.png">
+            </div>
+            <div class="col-lg-2">
+                <img src="/img/women.png">
+            </div>
+        </div>
+    </section>
+
+    <!-- 買取の流れ -->
+    <section>
+        <div class="row mw" style="max-width: 1100px;">
+            <div class="col-lg-12 text-center mb-5">
+                <h1 class="line2 text-black px-5">買取の<span class="text-red">流れ</span></h1>
+            </div>
+            <div class="col-lg-4 mx-auto  my-3">
+                <img src="/img/f1.png">
+            </div>
+            <div class="col-lg-4 mx-auto  my-3">
+                <img src="/img/f2.png">
+            </div>
+            <div class="col-lg-4 mx-auto  my-3">
+                <img src="/img/f3.png">
+            </div>
+            <div class="col-lg-4 mx-auto me-lg-0  my-3">
+                <img src="/img/f4.png">
+            </div>
+            <div class="col-lg-4 mx-auto ms-lg-0  my-3">
+                <img src="/img/f5.png">
+            </div>
+        </div>
+    </section>
+
+    <!-- お客様の声 -->
+    <section class="bg-3">
+        <div class="row">
+            <div class="col-lg-12 text-center mb-5">
+                <h1 class="text-black line3 px-5">お客様の声</h1>
+            </div>
+
+            <ul class="slider-2 col-12 p-0" id="js-slider-2">
+                <li class="pt-5 mx-5">
+                    <div class="bg-white p-5 mx-auto border border-dark d-shadow" style="max-width: 900px;">
+                        <div class="row position-relative">
+                            <div class="position-absolute text-center" style="top:-70px">
+                                <h3 class="line1 d-inline px-5 py-2">初めてでもスムーズに取引ができました</h3>
+                            </div>
+                            <img class="col-xl-5 img-car" src="/img/tr2.png">
+                            <div class="col-xl-7">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p>
+                                            査定の予約から実際の引き取りまでとてもスムーズで、特に査定の際には、細かい質問にも分かりやすく答えてくれたので、安心して進めることができました。
+                                            引き渡し後の入金もスピーディで、約束通り1週間以内に振り込まれました。次回もぜひ利用したいと思います。
+                                        </p>
+                                    </div>
+                                    <div class="col-7 p-0">
+                                        <div class="row">
+                                            <div class="col-6 mt-3 bg-gray">
+                                                <p>年式</p>
+                                            </div>
+                                            <div class="col-6 mt-3">
+                                                <p>平成19年</p>
+                                            </div>
+                                            <div class="col-6 mt-3 bg-gray">
+                                                <p>メーカー</p>
+                                            </div>
+                                            <div class="col-6 mt-3">
+                                                <p>いすゞ</p>
+                                            </div>
+                                            <div class="col-6 mt-3 bg-gray">
+                                                <p>走行距離</p>
+                                            </div>
+                                            <div class="col-6 mt-3">
+                                                <p>114万Km</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-5 center p-0">
+                                        <p class="bg-main text-white p-1">買取価格</p>
+                                        <h3 class="text-yellow m-2">81</h3>
+                                        <p>万円</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="pt-5 mx-5">
+                    <div class="bg-white p-5 mx-auto border border-dark d-shadow" style="max-width: 900px;">
+                        <div class="row position-relative">
+                            <div class="position-absolute text-center" style="top:-70px">
+                                <h3 class="line1 d-inline px-5 py-2">スピーディーな買取</h3>
+                            </div>
+                            <img class="col-xl-5 img-car" src="/img/tr5.png">
+                            <div class="col-xl-7">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p>
+                                            急いでトラックを売却する必要があったのですが、問い合わせから査定、引き取りまで非常にスムーズでした。最初は実際に手続きが間に合うのか不安でしたが、
+                                            対応も迅速で、忙しい中でもストレスなく取引ができたことに感謝しています。友人にもぜひ勧めたいと思います。
+                                        </p>
+                                    </div>
+                                    <div class="col-7 p-0">
+                                        <div class="row">
+                                            <div class="col-6 mt-3 bg-gray">
+                                                <p>年式</p>
+                                            </div>
+                                            <div class="col-6 mt-3">
+                                                <p>平成30年</p>
+                                            </div>
+                                            <div class="col-6 mt-3 bg-gray">
+                                                <p>メーカー</p>
+                                            </div>
+                                            <div class="col-6 mt-3">
+                                                <p>いすゞ</p>
+                                            </div>
+                                            <div class="col-6 mt-3 bg-gray">
+                                                <p>走行距離</p>
+                                            </div>
+                                            <div class="col-6 mt-3">
+                                                <p>100万Km</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-5 center p-0">
+                                        <p class="bg-main text-white p-1">買取価格</p>
+                                        <h3 class="text-yellow m-2">65</h3>
+                                        <p>万円</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </section>
+
+
+    <!-- よくある質問 -->
+    <section>
+        <div class="row mw">
+            <div class="col-lg-12 text-center mb-5">
+                <h1 class="text-black line2 px-5">よくある質問</h1>
+            </div>
+            <div class="accordion accordion-flush col-12" id="accordionFlushExample">
+                <div class="accordion-item mb-3" style="    border: none;">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-pink p-0 pe-5" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                            aria-controls="flush-collapseOne">
+                            <h1 class="d-inline bg-main text-white p-3 m-0">Q</h1>
+                            <p class="d-inline p-3">どんなトラックでも買取してくれますか？</p>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body p-5">
+                            はい。小型、中型、大型、特殊、低年式、過走行、バッテリーあがり、車検切れ、不動車など、どんなトラックでも高額買取りいたします。どんな状態のトラックでも、お問い合わせいただければ専門店ならではの価格を提示させていただきます。
+                            必要の無くなったトラックなどございましたら、お気軽にお問い合わせください。
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item mb-3" style="    border: none;">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-pink p-0 pe-5" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                            aria-controls="flush-collapseTwo">
+                            <h1 class="d-inline bg-main text-white p-3 m-0">Q</h1>
+                            <p class="d-inline p-3">首都圏外ですが、買取に来てもらえますか？</p>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body p-5">
+                            トラックの買取エリアは日本全国に対応しており、47都道府県どこでも無料で出張いたします。万が一、商談が不成立になったとしても、査定料、出張料などはいただきませんのでご安心ください。（※北海道、沖縄、離島の場合は、対応が難しい場合がございます。）
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item mb-3" style="    border: none;">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-pink p-0 pe-5" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#flush-collapsethree" aria-expanded="false"
+                            aria-controls="flush-collapsethree">
+                            <h1 class="d-inline bg-main text-white p-3 m-0">Q</h1>
+                            <p class="d-inline p-3">トラックの査定は無料ですか？</p>
+                        </button>
+                    </h2>
+                    <div id="flush-collapsethree" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body p-5">
+                            はい。無料です。
+                            トラック王国では査定後のしつこい営業も行っておりませんので、査定の依頼はお気軽にお申し付けください。
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item mb-3" style="    border: none;">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-pink p-0 pe-5" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#flush-collapsefour" aria-expanded="false"
+                            aria-controls="flush-collapsefour">
+                            <h1 class="d-inline bg-main text-white p-3 m-0">Q</h1>
+                            <p class="d-inline p-3">査定日にその場で売ることはできますか?</p>
+                        </button>
+                    </h2>
+                    <div id="flush-collapsefour" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body p-5">
+                            もちろん可能です。又、車両の買取に必要な書類が揃っていれば、その場で買い取らせていただき、代金をお支払（お振込み）致します。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- フォーム -->
+    <section class="bg-1">
+        <div class="row mw">
+            <div class="col-lg-12 text-center mb-5">
+                <h1 class="text-black line2 px-5">査定フォーム</h1>
+            </div>
+            <div class="col-lg-10 bg-white p-5 border border-dark d-shadow mx-auto">
+                <div class="row">
+                    <div class="col-5 list-form  mb-5">
+                        <p class="m-0">お名前</p>
+                        <p class="m-0 line1">必須</p>
+                    </div>
+                    <div class="col-6 bg-gray border border-dark py-4 ms-3 mb-5"></div>
+                    <div class="col-5 list-form  mb-5">
+                        <p class="m-0">電話番号</p>
+                        <p class="m-0 line1">必須</p>
+                    </div>
+                    <div class="col-6 bg-gray border border-dark py-4 ms-3 mb-5"></div>
+                    <div class="col-5 list-form  mb-5">
+                        <p class="m-0">メールアドレス</p>
+                        <p class="m-0 line1">必須</p>
+                    </div>
+                    <div class="col-6 bg-gray border border-dark py-4 ms-3 mb-5"></div>
+                    <div class="col-5 list-form  mb-5">
+                        <p class="m-0">メーカー</p>
+                        <p class="m-0 line1">必須</p>
+                    </div>
+                    <div class="col-6 bg-gray border border-dark py-4 ms-3 mb-5"></div>
+                    <div class="col-5 list-form  mb-5">
+                        <p class="m-0">車種</p>
+                        <p class="m-0 line1">必須</p>
+                    </div>
+                    <div class="col-6 bg-gray border border-dark py-4 ms-3 mb-5"></div>
+                    <div class="col-5 list-form  mb-5">
+                        <p class="m-0">その他・備考</p>
+                    </div>
+                    <div class="col-6 bg-gray border border-dark py-5 ms-3 mb-5"></div>
+                </div>
+                <div class="row text-center">
+                    <p class="my-5 col-12">ご入力いただいた個人情報は査定以外の目的で使用することはありません。</p>
+                    <div class="mx-auto">
+                        <button class="btn m-0">
+                            <h3>送信する</h3>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 注意点 -->
+    <section>
+        <div class="row mw">
+            <div class="col-lg-12 text-center mb-5">
+                <h1 class="text-red line2 px-5">お客様への注意事項</h1>
+            </div>
+            <div class="col-lg-5 bg-white p-4 pt-5 mx-auto border border-dark d-shadow">
+                <img src="/img/c1.png" class="">
+                <p class="m-0 mt-3">トラックの車検証をご覧いただき、車検証の所有者欄に記載されている名前が、売却予定の本人であるかをご確認ください。<br>
+                    本人であれば必要書類などを揃えることでトラックの売却は可能です。<br>
+                    所有者が他人や法人である場合は勝手に売却することはできず、横領罪にあたるため、ご注意ください。
+                </p>
+            </div>
+            <div class="col-lg-5 bg-white p-4 pt-5 mx-auto border border-dark d-shadow">
+                <img src="/img/c2.png" class="">
+                <p class="m-0 mt-3">実は、故障や破損箇所を修理し、売却したとしても、買取価格が修理代金よりも高くなったり、修理していることが評価に繋がる可能性は低いのです。<br>
+                    損をしない為にも、修理せずにトラックの売却検討をなさることをおススメします。</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray">
+        <div class="row mw text-center">
+            <div class="col-lg-12">
+                <p>※ご契約の際には、免許証、健康保険証、パスポートなど、ご本人確認のための書類が必要になります。<br>
+                    ※弊社のトラック買取サービスは沖縄県と離島のお客様は原則的に対象外です。</p>
+            </div>
+            <div class="col-lg-12 mt-5">
+                <small>© 働く車買取屋</small>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- スライダー -->
+    <!-- jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+    <!-- slickのJavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            $('#js-slider-1').slick({
+                autoplay: true,
+                autoplaySpeed: 4000,
+                arrows: true,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            $('#js-slider-2').slick({
+                autoplay: true,
+                speed: 1000, // スライドさせるスピード（ミリ秒）
+                slidesToShow: 1, // 表示させるスライド数
+                centerMode: true, // slidesToShowが奇数のとき、現在のスライドを中央に表示する
+                variableWidth: true, // スライド幅の自動計算を無効化
+            });
+        });
+    </script>
+    <!-- アニメーション -->
+    <script>
+        new WOW().init();
+    </script>
+
+</body>
+
+</html>
