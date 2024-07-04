@@ -207,12 +207,12 @@ section{
     background: #FFF3F4;
 }
 .bg-img{
-    background: url('/img/mv.png');
+    background: url('img/mv.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
 .bg-img2{
-    background: url('/img/ship.png');
+    background: url('img/ship.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
