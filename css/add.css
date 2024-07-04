@@ -212,7 +212,7 @@ section{
     background-repeat: no-repeat;
 }
 .bg-img2{
-    background: url('img/ship.png');
+    background: url('../img/ship.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
