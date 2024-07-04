@@ -207,7 +207,7 @@ section{
     background: #FFF3F4;
 }
 .bg-img{
-    background: url('img/mv.png');
+    background: url('../img/mv.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
