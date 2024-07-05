@@ -274,7 +274,6 @@ section{
     margin: 0;
     padding: 150px 0;
     position: relative;
-    margin-top: 5rem;
 }
 .bg-3::before {
     content: '';
@@ -324,10 +323,12 @@ section{
 
 
 /* レスポンシブ */
-@media screen and (min-width: 992px){
-
+@media screen and (max-width: 767px){
+    .text-r {
+    top: -3vw;
+    left: -10px;
+    }
 }
-
 @media screen and (max-width: 991px){
     h1{
     color: #  !important;
@@ -372,10 +373,14 @@ section{
     .mw-rev{
         max-width: 90vw;
     }
+    section{
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+    }
 }
 
-@media (min-width: 992px) {
-    .col-lg-reason {
+@media (min-width: 768px) {
+    .col-md-reason {
         flex: 0 0 auto;
         width: 32% !important;
     }
